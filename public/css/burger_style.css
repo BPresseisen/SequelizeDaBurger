@@ -1,0 +1,81 @@
+.topImage{
+
+    display:flex;
+    justify-content:center;
+}
+
+
+#leadImage{
+
+    height: 5%;
+    width: 5%;
+
+}
+
+.body{
+
+    /* background: url("../img/burger_vector_1.jpg");
+    -webkit-background-size: cover;
+    background-size: cover; */
+
+    background-color: sandybrown;
+}
+
+.title{
+
+    margin-left: 1%;
+    text-align: center;
+
+}
+
+.cont-header{
+
+    margin-left: 20%;
+
+}
+
+.burgerMain{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: sandybrown;
+}
+
+.colTopic{
+
+    margin-left: 5%;
+    margin-left: 5%;
+
+}
+
+.burgList{
+
+    list-style:none;
+    padding:0px;
+
+
+}
+
+.row_footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+}
+
+.footerIcons{
+
+    width: 30px;
+    height: 30px;
+
+}

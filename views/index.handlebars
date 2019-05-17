@@ -1,0 +1,111 @@
+
+<div class="title">
+
+  <h1>EAT da Burger!</h1>
+
+
+</div>
+
+<br>
+<div class = "container burgerMain">
+       <div class= "colTopic">
+
+          <h3>BURGERS TO EAT</h3>
+
+          <ul class="burgList">
+            {{#each burgers}}
+              {{#unless devoured}}
+                {{> burgers/burger-block devoured=false}}
+              {{/unless}}
+            {{/each}}
+          </ul> 
+
+          <br>
+
+          <h2>Add a Burger</h2>
+          <form class="create-form">
+
+            <div class="form-group">
+              <label for="burger">Burger:</label>
+              <input type="text" id="burger" name="burger">
+            </div>
+
+            <button type="submit">Add Burger</button>
+          </form>
+
+      </div>
+
+      <div class= "colTopic">
+
+        <h3>DEVOURED BURGERS</h3>
+
+        <ul class="burgList">
+          {{#each burgers}}
+            {{#if devoured}}
+              {{> burgers/burger-block devoured=true}}
+            {{/if}}
+          {{/each}}
+        </ul>
+
+      </div>
+</div>
+
+{{!-- <h2>Eating Plan: Wanted Burgers!</h2>
+
+<br>
+
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+  {{/each}}
+</ul>           
+
+<br>
+
+<h2>Review Writing: Devoured Burgers</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burger">Burger:</label>
+    <input type="text" id="burger" name="burger">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form> --}}
+
+{{!-- <div class="row">
+                <div class="col-4 portCard" >
+                    <div class="card text-white mb-1">
+                        <div class="card-img-overlay.text-secondary">
+                            <h6>THIS IS FOR THE WANTED BURGERS</h6>
+                        </div>       
+                    </div>
+                </div>
+                <div class="col-4 portCard" >
+                    <div class="card text-white mb-1">
+                        <div class="card-img-overlay.text-secondary">
+                            <h6>THIS IS FOR THE IMAGE ROTAESH</h6>
+                        </div>       
+                    </div>
+                </div> 
+                <div class="col-4 portCard" >
+                    <div class="card text-white mb-1">
+                        <div class="card-img-overlay.text-secondary">
+                            <h6>THIS IS FOR THE DEVOURED LIST</h6>
+                        </div>       
+                    </div>
+                </div> 
+            </div> --}}
